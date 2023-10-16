@@ -22,7 +22,7 @@ jobs:
         run: |
           export PR_NUMBER=$(cat artifact/pr_number.txt)
           echo "pr-number=$PR_NUMBER" >> $GITHUB_ENV
-          echo "pr_number=$(cat NR)" >> $GITHUB_ENV
+          echo "pr_number=$(cat artifact/pr_number.txt)" >> $GITHUB_ENV
 
       - name: Checkout repository
         uses: actions/checkout@v3
