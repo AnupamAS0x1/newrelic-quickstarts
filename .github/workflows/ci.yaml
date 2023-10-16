@@ -14,5 +14,5 @@ jobs:
       - name: Upload pr_number.txt
         uses: actions/upload-artifact@v2
         with:
-          name: pr_metadata
+          name: artifact
           path: ./pr_number.txt
